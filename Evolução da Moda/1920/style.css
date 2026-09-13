@@ -1,0 +1,115 @@
+
+body{
+    background: linear-gradient(160deg, #cc55a4, #b32383, #bd3694, #750c5e);
+background-image: url("1 (1).jpg");
+ background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+h1{
+
+    font-family: 'Ballet', sans-serif;
+    font-size: 800%;
+    text-align: center;
+    margin-top: 00px;
+    margin-bottom: 100px;
+    text-shadow: 2px 2px 4px #000000;
+    color: #3d0319;
+
+
+}
+
+p{
+    font-family: 'Playfair Display', serif;
+    font-size: 180%;
+    color:  #d3296a;
+    text-shadow: 1px 1px 2px #000000;
+    text-align: left;
+}
+
+/* Bloco local para layout imagem/texto sem sobrescrever o design global */
+.feature{
+    max-width: 1100px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;   /* deixa texto e imagem alinhados na mesma altura */
+    justify-content: flex-start; /* tira o espaço enorme entre eles */
+    gap: 40px; /* distância entre texto e imagem */
+}
+
+.feature .texto {
+    flex: 1;
+    text-align: right;
+}
+
+@media (max-width: 700px) {
+    .feature {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .feature img {
+        width: 100%;
+        max-width: 500px;
+    }
+    .feature .texto {
+        text-align: left;
+    }
+}
+
+.feature img{
+    width: 420px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 0;
+}
+
+.imagem{
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    display: block;
+    width: 500px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    flex-shrink: 0;
+    box-shadow: 0 20px 8px rgba(0, 0, 0, 0.135);
+
+}
+
+textarea {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    flex: 1;
+}
+
+/* Variante: mantém imagem à direita (texto à esquerda) */
+.content.normal {
+    flex-direction: column;
+}
+
+.feature .texto{
+    flex: 1;
+}
+
+.texto.doisresumo{
+    font-size: 160%;
+    color: #d3296a;
+    text-shadow: 1px 1px 2px #000000;
+    text-align: center;
+}
